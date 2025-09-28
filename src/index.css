@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+/* *{
+  border: 2px solid red;
+} */
+body{
+  background-color: var(--color-gray-950);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+
+}
+
+.glass-bg{
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section{
+  position: relative;
+  width: 100%;
+}
+
+
+.card{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+@media (max-width:1023px) {
+  .card{
+    height: auto;
+    padding: 0.5rem;
+  }
+}
+
+.card-wrapper{
+  position: relative;
+  width:100%;
+  height: 100%;
+  will-change: transform;
+}
+
+
+.card-img{
+  position: absolute;
+  width: 100%;
+  height: 95vh;
+  border-radius: 35px;
+  overflow: hidden;
+}
+@media (max-width:1023px) {
+  .card-img{
+    position: relative;
+    height: 100%;
+    max-height: 240px;;
+     border-radius: 15px;
+  }
+}
+
+.card-img::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 1;
+}
+
+.card-img img{
+  transform: scale(1.4, 1.4);
+  object-position: center;
+  z-index: 1;
+}
+@media (max-width:1023px) {
+  .card-img img{
+    transform: scale(1,1);
+      object-position: top;
+  }
+}
+
+.card-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: start;
+  padding-top: 200px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 99;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
+
+.one .card-content{
+  font-weight: bold;
+  opacity: 0;
+}
+
+@media (max-width:1023px) {
+  .card-content{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .one .card-content{
+    opacity: 1;
+  }
+  .two .card-img img{
+    object-position: -2px -120px;
+  }
+  .three .card-img img{
+    object-position: -1px -111px;
+  }
+}
+
+
+
+/* About Section */
+
+.clip-text {
+ clip-path: inset(0% 0px 38.6296%);
+}
+.text-darkBrown {
+    color: #2a2725;
+}
+.clip-text-welcome {
+    clip-path: inset(0 0 100% 0);
+    color: #f4efe7;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* ##############" END  About Section ################### */
+/******** Start  Feature Section ################### */
+
+#feature .numbers{
+  clip-path: inset(0 0 round 372px);
+  perspective: 340px;
+}
+#feature .number{
+  opacity: 0;
+  transform:"rotateX(-60deg) translateY(-80%) translateZ(0px)";
+  transform-style: preserve-3d;
+}
+
+#feature .number:not(:first-child){
+  padding-top: 25px;
+}
+#feature .title{
+  opacity: 0;
+  transform: translateY(140%);
+}
+/* ##############" END  Feature Section ################### */
