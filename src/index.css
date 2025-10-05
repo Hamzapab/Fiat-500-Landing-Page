@@ -1,5 +1,60 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
+
+/* Custom classes */
+
+@layer utilities {
+  .border-hsla {
+    @apply border border-white/20;
+  }
+
+  .nav-hover-btn {
+    @apply relative ms-10  text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+  }
+
+  .floating-nav {
+    @apply bg-black rounded-lg border;
+  }
+
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .hero-heading {
+    @apply uppercase  font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+  }
+
+  .about-subtext {
+    @apply absolute bottom-[-88dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center  text-lg md:max-w-[34rem];
+  }
+
+  .about-image {
+    @apply absolute left-1/2 top-0 z-20 h-[65vh] w-90 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+  }
+
+  .animated-title {
+    @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+  }
+
+  .animated-word {
+    @apply  font-black opacity-0;
+    transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
+    transform-origin: 50% 50% -150px !important;
+    will-change: opacity, transform;
+   
+}
+}
+
 /* *{
   border: 2px solid red;
 } */
