@@ -1,8 +1,8 @@
 // import { Routes } from "react-router-dom";
 // import Navbar from "./components/navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 // import StackedCards from "./components/StackedCards";
-import About from "./components/About";
+// import About from "./components/About";
 import Features from "./components/Features";
 import VideoLand from "./components/FiatDesign";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -20,7 +20,7 @@ function MainApp() {
       <section className="outro h-screen relative p-7 flex items-center justify-center">
         <h1 className="text-2xl lg:text-5xl">This is Intro One</h1>
       </section>
-      <About />
+      <Hero />
       <Features />
       <VideoLand />
       <section className="outro h-screen relative p-7 flex items-center justify-center">
