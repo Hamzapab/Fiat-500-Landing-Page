@@ -30,6 +30,7 @@ export default function About() {
   
         //  Reveal Image
         const revealContainer = document.querySelector(".reveal");
+        const revealContainer2 = document.querySelector(".reveal2");
   
         if (revealContainer) {
           const image = revealContainer.querySelector("img");
@@ -47,6 +48,27 @@ export default function About() {
           });
           tl2.from(image, 1.5, {
             xPercent: 100,
+            scale: 1.3,
+            delay: -1.5,
+            ease: "Power2.out",
+          });
+        }
+        if (revealContainer2) {
+          const image = revealContainer2.querySelector("img");
+          const tl2 = gsap.timeline({
+            scrollTrigger: {
+              trigger: revealContainer2,
+              toggleActions: "restart none none reset",
+            },
+          });
+  
+          tl2.set(revealContainer2, { autoAlpha: 1 });
+          tl2.from(revealContainer2, 1.5, {
+            xPercent: 100,
+            ease: "Power2.out",
+          });
+          tl2.from(image, 1.5, {
+            xPercent: -100,
             scale: 1.3,
             delay: -1.5,
             ease: "Power2.out",
@@ -101,7 +123,7 @@ export default function About() {
         </div>
         <div className="container mx-auto py-10 mt-30 flex items-center justify-between">
           <div>
-            <div className="reveal  nvisible relative w-[80%] h-[80%] max-w-[500px] overflow-hidden">
+            <div className="reveal  invisible relative w-[80%] h-[80%] max-w-[500px] overflow-hidden">
               <img
                 src="/public/assets/fiats6.jpg"
                 className="w-full h-auto object-cover origin-left rounded-md shadow-md"
@@ -136,6 +158,34 @@ export default function About() {
             />
           </div>
         </div>
+        <div className="container mx-auto py-2 mt-10 flex items-center justify-between">
+      
+          <div className="text-2xl ">
+            <SplitTextMask
+              text="Soft-touch materials, ambient lighting"
+              className="mb-3"
+              delay={0}
+              scrollTrigger={true}
+            />
+            <SplitTextMask
+              text="and smart space design"
+              className="mb-3"
+              delay={0}
+              scrollTrigger={true}
+            />
+          
+          </div>
+           <div>
+            <div className="reveal2  invisible relative w-[80%] h-[80%] min-w-[320px] max-w-[700px] overflow-hidden">
+              <img
+                src="/public/assets/fiatinside.jfif"
+                className="w-full h-auto object-cover origin-left rounded-md shadow-md"
+                alt="Fiat 500"
+              />
+            </div>
+          </div>
+        </div>
+
       </section>
   );
 }
