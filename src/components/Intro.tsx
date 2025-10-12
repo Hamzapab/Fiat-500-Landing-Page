@@ -52,7 +52,7 @@ export default function Intro() {
   }, [exitInro]);
 
   return (
-    <div ref={comp} className="relative">
+    <section id="home" ref={comp} className="relative">
       <div
         id="intro"
         className="h-screen w-full p-10 bg-gray-50 absolute top-0 left-0 z-[1000] text-gray-950 text-6xl flex flex-col gap-12"
@@ -107,6 +107,6 @@ export default function Intro() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
