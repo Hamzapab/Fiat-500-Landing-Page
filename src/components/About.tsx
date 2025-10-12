@@ -13,7 +13,7 @@ export default function About() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: aboutContainer.current,
-            start: "top bottom",
+            start: "top bottom+=10",
             end: "bottom bottom",
             scrub: true,
           },
@@ -78,7 +78,7 @@ export default function About() {
       { scope: aboutContainer }
     );
   return (
-     <section ref={aboutContainer} className="about mt-50 pt-20">
+     <section ref={aboutContainer} className="about mt-10 pt-20 mb-20">
         <div className="container mx-auto text-5xl  z-0">
           <span className="relative abtText block mt-1">
             <span className="relative block text-darkBrown">
