@@ -14,7 +14,7 @@ export default function About() {
           scrollTrigger: {
             trigger: aboutContainer.current,
             start: "top bottom+=10",
-            end: "bottom bottom",
+            end: "bottom-=300 bottom",
             scrub: true,
           },
         });
@@ -23,8 +23,8 @@ export default function About() {
           tl.fromTo(
             clipTxt,
             { clipPath: "inset(0% 0px 100%)" },
-            { clipPath: "inset(0% 0px 0%)", duration: 1, ease: "none" },
-            "+=0" // starts immediately after the previous one finishes
+            { clipPath: "inset(0% 0px 0%)", duration: 0.5, ease: "none" },
+            "+=0" 
           );
         });
   
