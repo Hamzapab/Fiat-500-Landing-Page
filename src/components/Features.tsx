@@ -118,7 +118,7 @@ export default function Features() {
       >
         <div className="container mx-auto">
           <div className="wrapper grid grid-cols-12 items-center gap-y-20 ">
-            <div className="col-span-12 md:col-span-4 ps-4">
+            <div className="col-span-12 md:col-span-4 ps-4 text-center md:text-start">
               <h2 className="text-lg font-semibold">FIAT 500 Highlights</h2>
               <p className="impact text-lg">
                 <span className="text-amber-300">01</span> • 04
@@ -160,8 +160,8 @@ export default function Features() {
             </div>
 
             {/* Right column with text highlights */}
-            <div className="relative col-span-12 md:col-span-3 md:col-start-10">
-              <h3 className="is-active title text-lg font-medium ml-auto">
+            <div className="relative col-span-12 md:col-span-3 md:col-start-10 text-center md:text-start">
+              <h3 className="is-active title  text-lg  font-medium ml-auto">
                 Over 25 million FIAT 500 units sold worldwide since its 1957
                 debut.
               </h3>

@@ -37,9 +37,15 @@
   .about-subtext {
     @apply absolute bottom-[-88dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center  text-lg md:max-w-[34rem];
   }
+  .about-subtext-resp {
+    @apply relative  w-full py-10 text-center  text-lg ;
+  }
 
   .about-image {
     @apply absolute left-1/2 top-0 z-20 h-[65vh] w-90 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+  }
+  .about-image-resp {
+    @apply relative z-20 w-[90%] h-[50vh] mx-auto overflow-hidden rounded-2xl;
   }
 
   .animated-title {
