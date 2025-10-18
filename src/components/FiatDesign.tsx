@@ -47,13 +47,11 @@ const FiatDesign = () => {
         <p className="font-general text-lg uppercase md:text-xl text-black pt-10">
           FIAT 500
         </p>
-
         <AnimatedTitle
           title="The <b>A</b>rt of Simplicity<br /><b>D</b>esign in Motion"
           containerClass="mt-5 !text-black !text-center !text-4xl"
         />
-
-        <div className="about-subtext">
+        <div className="about-subtext hidden md:block">
           <p className="text-gray-600">
             From its sculpted silhouette to its luminous contours, every detail
             is designed to move — both on the road and in your heart.
@@ -61,9 +59,9 @@ const FiatDesign = () => {
         </div>
       </div>
 
-      <div className="h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image ">
-          <div className="cmpct absolute top-20 z-30 left-20 text-2xl translate-y-full opacity-0">
+      <div className="md:h-dvh w-screen" id="clip">
+        <div className="mask-clip-path about-image-resp md:about-image ">
+          <div className="cmpct absolute hidden md:block top-20 z-30 left-20 text-2xl translate-y-full opacity-0">
              FIAT 500 come alive — <br /> compact yet full of character
           </div>
           <video
@@ -76,6 +74,12 @@ const FiatDesign = () => {
           />
         </div>
       </div>
+       <div className="about-subtext-resp md:hidden">
+          <p className="text-gray-600">
+            From its sculpted silhouette to its luminous contours, every detail
+            is designed to move — both on the road and in your heart.
+          </p>
+        </div>
     </div>
   );
 };

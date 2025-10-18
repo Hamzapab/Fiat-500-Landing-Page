@@ -55,7 +55,7 @@ export default function Intro() {
     <section id="home" ref={comp} className="relative">
       <div
         id="intro"
-        className="h-screen w-full p-10 bg-gray-50 absolute top-0 left-0 z-[1000] text-gray-950 text-6xl flex flex-col gap-12"
+        className="h-screen w-full p-10 bg-gray-50 absolute top-0 left-0 z-[1000] text-gray-950 text-4xl md:text-6xl flex flex-col gap-12"
       >
         <h1 id="title1">Iconic. Compact. Timeless.</h1>
         <h2 id="title2">Designed for the City, Loved Everywhere</h2>
@@ -66,7 +66,7 @@ export default function Intro() {
         <div id="introExit" className="h-screen w-full opacity-0 relative z-[999]">
           <div id="inTroBg" className="absolute inset-0 bg-black/55 -z-0"></div>
           <img
-            src="/public/assets/fiatIntro.jpg"
+            src="/assets/fiatIntro.jpg"
             alt="fiat"
             className="absolute inset-0 w-full h-full object-cover -z-10"
           />
@@ -78,15 +78,15 @@ export default function Intro() {
         </div>
       )}
 
-      <div className="intro_land w-screen h-screen">
+      <div className="intro_land w-screen h-[60svh] md:h-screen">
         <div>
           <video
-            src="assets/fiatcanvas.mp4"
+            src="/assets/fiatcanvas.webm"
             autoPlay
             loop
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             className="absolute left-0 top-0 size-full object-cover"
           ></video>
         </div>
