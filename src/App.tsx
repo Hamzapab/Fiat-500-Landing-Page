@@ -7,8 +7,7 @@ import "./index.css";
 
 function App() {
   useLenis();
-
-   
+  
 
 
   return (
