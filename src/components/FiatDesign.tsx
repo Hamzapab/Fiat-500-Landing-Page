@@ -60,7 +60,7 @@ const FiatDesign = () => {
       </div>
 
       <div className="md:h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image-resp md:about-image ">
+        <div className="mask-clip-path about-image ">
           <div className="cmpct absolute hidden md:block top-20 z-30 left-20 text-2xl translate-y-full opacity-0">
              FIAT 500 come alive — <br /> compact yet full of character
           </div>

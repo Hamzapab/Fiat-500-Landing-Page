@@ -42,10 +42,8 @@
   }
 
   .about-image {
-    @apply absolute left-1/2 top-0 z-20 h-[65vh] w-90 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
-  }
-  .about-image-resp {
-    @apply relative z-20 w-[90%] h-[50vh] mx-auto overflow-hidden rounded-2xl;
+    @apply relative z-20 w-[90%] h-[50vh] mx-auto overflow-hidden rounded-2xl
+         md:absolute md:left-1/2 md:top-0 md:h-[65vh] md:w-90 md:-translate-x-1/2 md:rounded-3xl;
   }
 
   .animated-title {

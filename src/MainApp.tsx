@@ -21,7 +21,7 @@ function MainApp() {
       <Features />
       <Hero />
       <VideoLand />
-      <footer className="py-15 pt-40 bg-white text-black  px-8 flex flex-col md:flex-row items-center justify-between">
+      <footer className="py-15 pt-40 bg-white text-black  px-8 flex flex-col md:flex-row items-start justify-between">
         <div className="text-center md:text-left">
           <h4 className="text-lg font-semibold">FIAT 500 Experience</h4>
           <p className="text-sm text-black">
